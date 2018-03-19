@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>上传化验单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <script type="text/javascript" src="/wechat-web/wechat/prod/jquery-2.1.0.js"></script>
+</head>
+
+<body>
+
+<!--<input type="button" name="" id="checkJsApi" value="当前版本是否支持JS接口"/>-->
+<!--<input type="button" name="" id="chooseImage" value="选择图片"/>-->
+<!--<input type="button" name="" id="uploadImage" value="上传图片"/>-->
+
+<!--<input type="button" name="" id="previewImage" value="预览"/>-->
+
+
+<div id="chooseImage" >
+    <img class="camera" src="/wechat-web/wechat/img/camera.png">
+</div>
+
+<div class="container">
+    <!--<div class="postImg">-->
+        <!--<div class="imgBox"></div>-->
+        <!--<div class="btm">-->
+            <!--<div class="time">2017-10-10</div>-->
+            <!--<div class="del">删除</div>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<script type="text/html" id="preBox">
+    <div class="postImg">
+        <div class="imgBox">
+            <img class="pre" src={{imgUrl}}>
+        </div>
+        <div class="btm">
+            <div class="time">{{picTime}}</div>
+            <div class="del">删除</div>
+        </div>
+    </div>
+</script>
+<div class="cHide">
+    <div class="cBox">
+        <div class="confirm">
+            <div class="confirmWord">是否确认删除？</div>
+            <div class="confirmYoN">
+                <div class="confirmCancel">取消</div>
+                <div class="confirmSure">确定</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<!--<script type="text/javascript" src="http://test1.vongihealth.com/static/laboratorySheet.js"></script>-->
+<!--<script type="text/javascript" src="http://test2.vongihealth.com/wechat-web/wechat/prod/laboratorySheet.min.js"></script>-->
+<script type="text/javascript" src="http://192.168.8.165:3000/static/laboratorySheet.js" ></script>
+
+</body>
+
+</html>

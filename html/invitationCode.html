@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>预授权</title>
+		<link rel="stylesheet" href="/wechat-web/wechat/prod/invitationCode.min.css">
+		<script src="/wechat-web/wechat/prod/jquery-2.1.0.js"></script>
+		<script src="/wechat-web/wechat/layui/layui.js"></script>
+	</head>
+
+	<body>
+		<div class="phoneNumBox">
+			<div class="phoneNum">手机号码</div>
+		</div>
+		<div class="numBox">
+			<input type="tel" class="inputNum" maxlength="11">
+		</div>
+
+		<div class="codeNumBox">
+			<div class="code">授权码</div>
+		</div>
+		<div class="codeBox">
+			<input type="text" class="inputCode">
+		</div>
+
+		<div class="post">
+			<div class="rPost">
+				提交预授权
+			</div>
+		</div>
+		<!--弹出层-->
+		<!--error-->
+		<div class="showOrHide">
+			<div class="layerBox">
+				<div class="container">
+					<div class="top">
+						<img src="/wechat-web/wechat/img/defect.png" />
+					</div>
+					<div class="bottom">
+						<div class="used">
+							邀请码已经被使用
+						</div>
+						<div class="back">
+							返回
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--success-->
+		<div class="showOrHideSuccess">
+			<div class="layerBox">
+				<div class="containerS">
+					<div class="top">
+						<div class="icon">
+							<img class="close" src="/wechat-web/wechat/img/close.png"/>
+						</div>
+						<img src="/wechat-web/wechat/img/success.png" />
+						<div class="success">
+						恭喜您，授权成功
+					</div>
+					</div>
+					<div class="bottom">
+						<p class="tips">
+							您的手机号已授权成功,可以进行账号注册。
+						</p>
+						<div class="download">
+							下载小贝壳
+						</div>
+						<div class="word">
+							点击这里在微信公众号中完成注册
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/wechat-web/wechat/prod/invitationCode.min.js"></script>
+
+	</body>
+
+</html>
